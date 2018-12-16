@@ -28,7 +28,7 @@ unique_id_list = []
 for item in ids.values():
     unique_id_list += item
 
-print('#2', sorted(unique_id_list))
+print('#2', set(unique_id_list))
 
 # 3
 
@@ -85,3 +85,7 @@ stream = [
     '2018-05-03,user4,9',
     '2018-05-11,user4,11',
 ]
+
+user_dict = {}
+
+for history_item in stream:
